@@ -1,13 +1,11 @@
-import css from './FriendListItem.module.css';
+import { Friend, Online, Offline, Name } from './FriendListItem.styled';
 
 export const FriendListItem = ({ avatar, name, isOnline }) => {
   return (
-    <li className={css.friendListItem}>
-      <span>
-        <div className={isOnline ? css.online : css.offline}></div>
-      </span>
+    <Friend>
+      <span>{isOnline ? <Online /> : <Offline />}</span>
       <img src={avatar} alt={name} width="48" />
-      <p className={css.name}>{name}</p>
-    </li>
+      <Name>{name}</Name>
+    </Friend>
   );
 };

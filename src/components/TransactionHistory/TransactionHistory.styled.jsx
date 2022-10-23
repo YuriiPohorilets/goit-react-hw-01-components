@@ -1,4 +1,6 @@
-.transactionHistory {
+import styled from '@emotion/styled';
+
+export const Transacrions = styled.table`
   margin: 0 auto;
   margin-bottom: 20px;
   padding: 20px;
@@ -9,9 +11,9 @@
 
   box-shadow: var(--main-shadow);
   border-radius: 10px;
-}
+`;
 
-.header {
+export const TableHeader = styled.thead`
   margin-bottom: 20px;
 
   width: 100%;
@@ -19,17 +21,17 @@
 
   box-shadow: var(--main-shadow);
   border-radius: 10px;
-}
+`;
 
-.headerRow {
+export const HeaderRow = styled.tr`
   padding: 15px 10px;
 
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
+`;
 
-.headerTitle {
+export const HeaderTitle = styled.th`
   /* flex-basis: 33.333%; */
 
   font-weight: 700;
@@ -38,14 +40,14 @@
   text-align: left;
 
   text-shadow: var(--main-shadow);
-}
+`;
 
-.body {
+export const TableBody = styled.tbody`
   width: 100%;
   display: block;
-}
+`;
 
-.bodyRow {
+export const BodyRow = styled.tr`
   margin-bottom: 10px;
 
   display: flex;
@@ -54,9 +56,9 @@
 
   box-shadow: var(--main-shadow);
   border-radius: 10px;
-}
+`;
 
-.bodyValue {
+export const BodyValue = styled.td`
   padding: 10px;
 
   flex-basis: 33.333%;
@@ -65,4 +67,4 @@
   color: var(--secondary);
 
   text-shadow: var(--main-shadow);
-}
+`;
